@@ -1,0 +1,24 @@
+.tool-dialog{width:min(860px,calc(100% - 48px));max-width:none;max-height:90vh;max-height:90dvh;margin:auto;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;font:inherit}
+.tool-dialog::backdrop{background:rgba(20,26,34,.65)}
+.tool-dialog-header{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 32px;border-bottom:1px solid var(--line);background:var(--paper)}
+.tool-dialog-header h2{font-size:21px;line-height:1.45;scroll-margin-top:24px}
+.tool-dialog-close{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex-shrink:0;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.tool-dialog-close:hover{border-color:var(--accent);color:var(--accent)}
+.tool-dialog-close span{font-size:22px;line-height:1}
+.tool-dialog-content{padding:20px 32px 24px;font-size:15px;line-height:1.8}
+.tool-dialog-content>p+p,.tool-dialog-section>p+p{margin-top:12px}
+.tool-dialog-section{margin-top:24px}
+.tool-dialog-section h3{font-size:18px;margin-bottom:10px}
+.tool-dialog-figure{margin-top:16px}
+.tool-dialog-figure>img{display:block;width:auto;max-width:100%;max-height:320px;object-fit:contain;margin:0;border:1px solid var(--line)}
+.tool-dialog-footnote{font-size:13px;line-height:1.7;color:var(--secondary)}
+.tool-dialog-screen-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start;margin-top:16px}
+.tool-dialog-screen{position:relative;overflow:hidden;margin:0;border:1px solid var(--line);background:#fff}
+/* Two viewports of the original 2880 × 4498 screenshot, divided between panels. */
+.tool-dialog-screen-top{aspect-ratio:2480/1820}
+.tool-dialog-screen-bottom{aspect-ratio:2480/2490}
+.tool-dialog-screen img{position:absolute;display:block;width:116.129032%;max-width:none;height:auto;left:-8.064516%}
+.tool-dialog-screen-top img{top:-7.692308%}
+.tool-dialog-screen-bottom img{top:-79.518072%}
+@media(max-width:600px){.tool-dialog-screen-pair{grid-template-columns:1fr;gap:12px}}
+@media(max-width:760px){.tool-dialog{width:calc(100% - 24px);max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px)}.tool-dialog-header{padding:12px 16px;gap:12px}.tool-dialog-header h2{font-size:19px}.tool-dialog-content{padding:16px 18px 20px}}

@@ -1,0 +1,62 @@
+/* One archive, with material carrying the visual character. */
+.home-section{padding:0 0 88px}
+.home-intro{padding-top:64px}
+.intro-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:64px;align-items:start}
+.intro-copy{min-width:0}
+.section-title{font-size:30px;font-weight:600;line-height:1.4;letter-spacing:-.025em;margin-bottom:32px}
+.intro-section-title{font-size:16px;font-weight:500;color:var(--secondary);margin-bottom:20px}
+.intro-mail{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:16px;color:var(--accent);margin-top:24px}
+.intro-mail svg{flex:none}
+.career-story{max-width:660px;color:#424c56;line-height:1.9}
+.career-story p+p{margin-top:20px}
+.career-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.career-timeline h2{font-size:20px}
+.career-heading .text-link{font-size:13px}
+.career-era-heading h3{font-size:14px;font-weight:650;color:var(--accent);letter-spacing:.025em;margin-bottom:20px}
+.career-era-heading p{font-size:14px;color:var(--secondary);line-height:1.75;margin-bottom:16px}
+.career-timeline ol{list-style:none;padding:0;margin:0}
+.career-timeline li{padding-bottom:24px}
+.career-timeline strong{font-size:16px;display:block;margin:2px 0}
+.career-date{color:var(--secondary);font-size:13px;font-variant-numeric:tabular-nums}
+.career-focus{font-size:14px;line-height:1.75}
+.career-focus{color:var(--secondary);margin-top:8px}
+.career-company strong{font-size:17px;margin-bottom:3px}
+.career-era-foundation{padding-top:14px}
+.career-era-foundation li{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:8px}
+.career-era-foundation strong{font-size:14px;font-weight:500}
+.home-section:not(.home-intro)>.wrap{padding-top:32px}
+#work>.wrap{border-top:1px solid var(--line)}
+
+.work-heading-row{display:flex;align-items:baseline;justify-content:space-between}
+.work-heading-row .section-title{margin-bottom:14px}
+.work-caption{color:var(--secondary);margin-bottom:36px}
+.project-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,456px));justify-content:space-between;gap:76px 48px}
+.project-card{min-width:0;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.project-card-link{display:block;height:100%}
+.project-thumbnail{position:relative;aspect-ratio:3/2;overflow:hidden;background:#fff}
+.cover-scene{position:absolute;inset:0;overflow:hidden}
+.cover-scene>img{display:block;width:100%;height:100%}
+.cover-pending{display:grid;place-items:center;background:#fafbfc;border:1px solid var(--line);color:var(--secondary);font-size:16px}
+.project-cover{position:relative}
+.project-cover figcaption{position:absolute;top:55%;left:5.333333%;width:43.333333%;text-align:left;color:var(--secondary);font-size:13px;line-height:1.7}
+.persona-window{position:absolute;left:61.916667%;top:10.25%;width:24.5%;height:79.530769%;border-radius:10.25641% / 4.739336%;overflow:hidden}
+.persona-strip{display:flex;width:400%;height:100%}
+.persona-strip img{display:block;flex:0 0 25%;width:25%;height:100%}
+.project-card-body{padding-top:20px}
+.project-card h3{font-size:22px;line-height:1.5;font-weight:550;color:var(--ink);text-wrap:pretty}
+.project-tags{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-size:14px;color:var(--secondary);line-height:1.7}
+.project-tags span{white-space:nowrap}
+.practice-list{display:flex;flex-direction:column;gap:32px;max-width:760px}
+.practice-item{display:flex;flex-direction:column;align-items:start;min-width:0}
+.practice-item h3{font-size:21px;line-height:1.5;margin-bottom:14px}
+.practice-item>p{color:var(--secondary);line-height:1.85}
+.practice-item>.text-link{margin-top:12px}
+.practice-evidence{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.practice-example{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:4px;font-size:14px;font-weight:500;line-height:1.6;color:var(--ink);background:var(--surface);text-decoration:none}
+.practice-example:hover{border-color:var(--secondary)}
+.practice-example:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.persona-strip{transform:none!important}}
+@media(max-width:1000px){.intro-layout{grid-template-columns:minmax(0,1fr) 280px;gap:36px}}
+@media(max-width:760px){.home-section{padding-bottom:56px}.home-intro{padding-top:40px}.intro-layout{grid-template-columns:1fr;gap:40px}.career-timeline{max-width:520px;width:100%}.career-timeline h2{font-size:22px}.section-title{font-size:28px;margin-bottom:24px}.intro-section-title{font-size:16px;margin-bottom:20px}.project-gallery{grid-template-columns:1fr;gap:52px}.project-card h3{min-height:0;font-size:22px}.project-cover figcaption{min-height:0}.project-tags{margin-top:8px}.work-caption{margin-bottom:28px}.practice-list{gap:24px}.practice-item h3{font-size:21px}.home-section:not(.home-intro)>.wrap{padding-top:24px}}
+@media(max-width:440px){.career-era-foundation li{flex-wrap:wrap}}
+@media print{.home-intro{padding-top:0}.home-section{padding-bottom:32px}.project-card{break-inside:avoid}.project-gallery{grid-template-columns:1fr 1fr}.intro-layout{display:block}.career-timeline{margin-top:24px}}
