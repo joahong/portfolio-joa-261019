@@ -47,14 +47,16 @@
 .project-tags{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-size:14px;color:var(--secondary);line-height:1.7}
 .project-tags span{white-space:nowrap}
 /* Keep each selected case's image, title and tags together. */
-.work-selection{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,456px);gap:88px;align-items:start}
+.work-selection{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:64px;align-items:start;max-width:864px}
 .work-selection .work-introduction{position:sticky;top:116px;max-width:300px}
-.work-selection .work-caption{margin-bottom:0}
-.project-gallery-list{grid-template-columns:minmax(0,1fr);gap:64px}
-.project-gallery-list .project-card{padding-bottom:32px}
+.work-selection .section-title{font-size:26px}
+.work-selection .work-caption{margin-bottom:0;font-size:15px;max-width:260px}
+.project-gallery-list{grid-template-columns:minmax(0,1fr);gap:36px}
+.project-gallery-list .project-card{padding-bottom:24px}
 .project-gallery-list .project-card-link{display:block}
-.project-gallery-list .project-card-body{padding-top:20px}
-@media(max-width:900px){.work-selection{display:block;max-width:456px}.work-selection .work-introduction{position:static;max-width:none}.work-selection .work-caption{margin-bottom:32px}}
+.project-gallery-list .project-card-body{padding-top:14px}
+.project-gallery-list .project-card h3{font-size:20px;line-height:1.45}
+@media(max-width:900px){.work-selection{display:block;max-width:360px}.work-selection .work-introduction{position:static;max-width:none}.work-selection .work-caption{margin-bottom:24px;max-width:none}}
 .practice-list{display:flex;flex-direction:column;gap:32px;max-width:760px}
 .practice-item{display:flex;flex-direction:column;align-items:start;min-width:0}
 .practice-item h3{font-size:21px;line-height:1.5;margin-bottom:14px}
