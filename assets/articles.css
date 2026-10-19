@@ -149,3 +149,9 @@
 @media(max-width:600px){.article-section .article-comparison{gap:28px 12px}.article-section .article-comparison .evidence img{height:190px;max-height:190px}.article-section .article-comparison figcaption{font-size:12px;line-height:1.65}}
 
 .article-section .article-report .evidence img{width:100%;max-width:520px;height:auto;max-height:none;margin:0 auto}
+
+/* Original social cards stay intact and readable. */
+.article-section .article-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.article-section .article-cards .evidence{min-width:0}
+.article-section .article-cards .evidence img{width:100%;height:auto;max-height:none;border:0;background:transparent}
+@media(max-width:600px){.article-section .article-cards{grid-template-columns:1fr;gap:16px}}
